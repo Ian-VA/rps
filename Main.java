@@ -31,7 +31,8 @@ public class Main {
     
           won = wins[winner] >= 4 ? true : false;
           
-          if (won) System.out.println(String.format("PLAYER %s WINS!!!!", winner));
+          if (won) {System.out.println(String.format("PLAYER %s WINS!!!!", winner)); System.out.println(String.format("%d-%d", wins[1], wins[0]));}
+          
           
         } else {
           System.out.println("Draw on round " + roundnum);
